@@ -28,26 +28,330 @@
                         </div>
                         <ul class="navbar-nav flex-column mt-4">
                             <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-envelope text-light fa-lg mr-3"></i>Inbox</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>Sales</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytics</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>Charts</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-table text-light fa-lg mr-3"></i>Tables</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-wrench text-light fa-lg mr-3"></i>Settings</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-file-alt text-light fa-lg mr-3"></i>Documentation</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i>Inbox</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>Sales</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytics</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>Charts</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>Tables</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>Settings</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-file-alt text-light fa-lg mr-3"></i>Documentation</a></li>
                         </ul>
                     </div>
                     <!-- Sidebar end -->
 
                     <!-- Up navigation -->
-                    <div class="col-lg-10"></div>
+                    <div class="col-lg-10 ml-auto bg-dark fixed-top py-2">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <h4 class="text-light text-uppercase mb-0">Dashboard</h4>
+                            </div>
+                            <div class="col-md-5">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input" placeholder="Search...">
+                                        <button type="button" class="btn btn-light search-button"><i class="fa fa-search text-danger"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item icon-parrent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-comments text-muted fa-lg"></i></a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bell text-muted fa-lg"></i></a></li>
+                                    <li class="nav-item ml-auto"><a href="#" class="nav-link" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt fa-lg text-danger"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Up navigation end -->
                 </div>
             </div>
         </div>
     </nav>
     <!-- Menu end -->
+
+    <!-- Modal window -->
+    <div class="modal" id="sign-out">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Want to leave?</div>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Press logout to leave
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Stay here</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal window end -->
+
+    <!-- Carts -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 ml-auto">
+                    <div class="row pt-5 mt-3 mb-5">
+                        <div class="col-sm-3 p-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <div>
+                                            <i class="fa fa-shopping-cart fa-3x text-warning"></i>
+                                        </div>
+                                        <div class="text-right text-secondary">
+                                            <h5>Sales</h5>
+                                            <h3>$135,000</h3>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync mr-4"></i>
+                                    <span>updated now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <div>
+                                            <i class="fa fa-shopping-cart fa-3x text-warning"></i>
+                                        </div>
+                                        <div class="text-right text-secondary">
+                                            <h5>Sales</h5>
+                                            <h3>$135,000</h3>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync mr-4"></i>
+                                    <span>updated now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <div>
+                                            <i class="fa fa-shopping-cart fa-3x text-warning"></i>
+                                        </div>
+                                        <div class="text-right text-secondary">
+                                            <h5>Sales</h5>
+                                            <h3>$135,000</h3>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync mr-4"></i>
+                                    <span>updated now</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <div>
+                                            <i class="fa fa-shopping-cart fa-3x text-warning"></i>
+                                        </div>
+                                        <div class="text-right text-secondary">
+                                            <h5>Sales</h5>
+                                            <h3>$135,000</h3>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync mr-4"></i>
+                                    <span>updated now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Carts end -->
+
+    <!-- Tables -->
+    <section>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-lg-10 ml-auto">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3 class="text-muted text-center mb-3">Staff Salary</h3>
+                            <table class="table table-striped bg-light text-center">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Salary</th>
+                                        <th>Date</th>
+                                        <th>Contact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Jan</td>
+                                        <td>5000</td>
+                                        <td>02.02.2017</td>
+                                        <td><button class="btn btn-info btn-sm" type="button">Messege</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Jan</td>
+                                        <td>5000</td>
+                                        <td>02.02.2017</td>
+                                        <td><button class="btn btn-info btn-sm" type="button">Messege</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Jan</td>
+                                        <td>5000</td>
+                                        <td>02.02.2017</td>
+                                        <td><button class="btn btn-info btn-sm" type="button">Messege</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Jan</td>
+                                        <td>5000</td>
+                                        <td>02.02.2017</td>
+                                        <td><button class="btn btn-info btn-sm" type="button">Messege</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Jan</td>
+                                        <td>5000</td>
+                                        <td>02.02.2017</td>
+                                        <td><button class="btn btn-info btn-sm" type="button">Messege</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>3</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link py-2 px-3">
+                                            <span>&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-6">
+                                <h3 class="text-muted text-center mb-3">Recent Peyment</h3>
+                                <table class="table table-striped bg-dark text-center text-light">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Salary</th>
+                                            <th>Date</th>
+                                            <th>Contact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Jan</td>
+                                            <td>5000</td>
+                                            <td>02.02.2017</td>
+                                            <td><span class="badge badge-success py-2 w-100">Aprroved</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jan</td>
+                                            <td>5000</td>
+                                            <td>02.02.2017</td>
+                                            <td><span class="badge badge-danger py-2 w-100">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Jan</td>
+                                            <td>5000</td>
+                                            <td>02.02.2017</td>
+                                            <td><span class="badge badge-success py-2 w-100">Aprroved</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Jan</td>
+                                            <td>5000</td>
+                                            <td>02.02.2017</td>
+                                            <td><span class="badge badge-success py-2 w-100">Aprroved</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Jan</td>
+                                            <td>5000</td>
+                                            <td>02.02.2017</td>
+                                            <td><span class="badge badge-danger py-2 w-100">Pending</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <nav>
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>Prev</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>1</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>2</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link py-2 px-3">
+                                                <span>Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tables end -->
 
     <!-- Bootstrap implementation -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
